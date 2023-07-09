@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Оформление заказа</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="../css/style.min.css?_v=20230709191922">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=e2266caa-4367-4e73-8883-187ee8c63617&lang=ru_RU&_v=20230709191922" type="text/javascript"></script>
+
+
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="head__container">
+				<a class="translate" href="../eng/market-eng.html"><img src="../img/translate.svg" alt=""></a>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+
+			<div class="header-open">
+
+
+				<div class="header__container">
+
+					<div class="header__menu menu">
+
+						<nav class="menu__body">
+							<h2 class="menu__title">Мы всегда в решении ожидания</h2>
+							<ul class="menu__list">
+								<li class="menu__item"><a href="#" class="menu__link _icon-arrow soon">Центр помощи</a></li>
+
+								<li class="menu__item"><a href="https://t.me/b1ockwallet" class="menu__link _icon-arrow">Telegram</a></li>
+								<li class="menu__item"><a href="https://github.com/b1ockwallet" class="menu__link _icon-arrow">GitHub</a></li>
+							</ul>
+						</nav>
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<a href="market.html" class="_icon-arrow3 form-icon-arrow"></a>
+			</div>
+			<a href="../index.html" class="buy-card__logo">
+				<img src="../img/logo-blue.svg" alt="logo">
+			</a>
+
+			<div class="page__container-small">
+
+
+				<section class="buy-form">
+
+
+
+
+					<form novalidate class="form" action="">
+						<div class="buy-form__body">
+							<div class="buy-form__order">
+								<h1 class="buy-form__title">Оформление <span>заказа</span></h1>
+								<div class="form__title">Контактные данные</div>
+								<div class="form-name">
+									<div class="form-name__title">Имя и Фамилия <span>*</span></div>
+									<input data-required class="form-name__input" autocomplete="off" type="" name="form[]" data-error="Введите пожалуйста имя" placeholder="Евгений Каркасенко" class="input">
+
+
+
+								</div>
+								<div class="form-tel">
+									<div class="form-tel__title">Контактный телефон<span>*</span></div>
+									<input id="phone" data-required="phone" class="form-tel__input" autocomplete="off" type="tel" name="phone" data-error="Введите пожалуйста номер телефона" placeholder="+7 (800) 555-35-35" class="input">
+								</div>
+								<div class="form-email">
+									<div class="form-email__title">Email<span>*</span></div>
+									<input data-required="email" class="form-email__input" autocomplete="off" type="email" name="form[]" data-error="Введите пожалуйста email" placeholder="youremail@gmail.com" class="input">
+								</div>
+								<div class="form-delivery">
+									<div class="form-delivery__subtitle">Доставка</div>
+									<div class="form-delivery__title">Населенный пункт<span>*</span></div>
+									<input data-required id="address-input" class="form-delivery__input" autocomplete="off" type="text" name="form[]" data-error="Введите пожалуйста адрес" placeholder="Планета земля" class="input">
+									<div class="form-delivery__choice delivery-choice-body">
+										<div class="checkbox1">
+											<input type="checkbox" id="checkbox1" class="checkbox__input">
+											<label class="checkbox__label" for="checkbox1"></label>
+										</div>
+										<div class="delivery-title">Доставка в точки самовывоза<span>Бесплатно</span></div>
+
+										<div>
+
+											<a class="delivery-choice-body__map" id="open-map">Выбрать на карте</a>
+											<div id="map-container" style="width: 100%; height: 300px;"></div>
+										</div>
+
+									</div>
+								</div>
+								<div class="form-pay">
+									<div class="form-pay__title">Способы оплаты</div>
+									<div class="checkbox2">
+										<input type="checkbox" id="checkbox2" class="checkbox__input">
+										<label class="checkbox__label-2" for="checkbox2"> Оплата картой онлайн
+									</div>
+									<div class="checkbox3">
+										<input type="checkbox" id="checkbox3" class="checkbox__input">
+										<label class="checkbox__label-3" for="checkbox3"> Блокчейн перевод<span> (скидка 20%)</span>
+									</div>
+
+								</div>
+								<button class="button-order">Подтвердить заказ</button>
+
+							</div>
+							<div class="buy-form__card buy-form-card">
+								<div class="buy-form-card__body">
+									<div class="buy-form-card__wrap">
+										<div class="buy-form-card__image">
+											<img src="../img/card-form.svg" alt="">
+										</div>
+									</div>
+									<div class="buy-form-card__p">
+										<div class="buy-form-card__title">B1ock Wallet (Набор из 3х карт)</div>
+										<div class="buy-form-card__info"><span id="quantity">1 </span><span> X</span>1 500 руб.</div>
+									</div>
+								</div>
+								<div class="buy-form-card__price price-form-card">
+									<div class="price-form-card__item item-price-form-card">
+										Сумма по товарам <span><span id="product-price">1500</span> руб.</span>
+									</div>
+								</div>
+								<div class="buy-form-card__dev dev-form-card">
+									<div class="dev-form-card__item item-dev-form-card">
+										Стоимость доставки <span>0 руб</span>
+									</div>
+								</div>
+								<div class="buy-form-card__total">
+									Итого:
+									<span><span id="price">1500</span> руб.</span>
+
+								</div>
+
+
+							</div>
+						</div>
+
+
+
+
+					</form>
+
+
+
+
+				</section>
+
+			</div>
+
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__logo">
+						<img src="../img/logo.svg" alt="">
+					</div>
+					<div class="footer__menu menu">
+
+						<nav class="footer-menu__body">
+
+							<div class="footer-menu__title">Товары</div>
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link soon">Block NFC</a></li>
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link soon">Учиться</a></li>
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link soon">Часто задаваемые вопросы</a></li>
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link soon">B1ock Академия</a></li>
+							</ul>
+						</nav>
+						<nav class="footer-menu__body">
+
+							<div class="footer-menu__title">Приложение</div>
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item"><a href="../app/app-debug.apk" download="" class="footer-menu__link">Мобильное приложение</a></li>
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link soon">Настольные приложения</a></li>
+							</ul>
+						</nav>
+						<nav class="footer-menu__devs">
+
+							<div class="footer-menu__title">Devs</div>
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link soon">Портал разработчиков</a></li>
+							</ul>
+							<div class="footer-menu__title title-resource">Ресурсы</div>
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link soon">Swagger API</a></li>
+								<li class="footer-menu__item"><a href="https://t.me/b1ockwallet" class="footer-menu__link">Telegram</a></li>
+								<li class="footer-menu__item"><a href="https://github.com/b1ockwallet" class="footer-menu__link">GitHub</a></li>
+							</ul>
+						</nav>
+
+					</div>
+
+				</div>
+				<div class="footer__copyright">с 2022 по настоящее время / B1OCK. Все права защищены.</div>
+			</div>
+		</footer>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<script src="../js/app.min.js?_v=20230709191922"></script>
+	<script>
+		window.onload = function() {
+			var urlParams = new URLSearchParams(window.location.search);
+			var quantity = urlParams.get('quantity') || 1;
+			var price = urlParams.get('price') || 1500;
+
+			document.getElementById("quantity").innerText = quantity;
+			document.getElementById("price").innerText = price;
+			document.getElementById("product-price").innerText = price;
+		}
+	</script>
+</body>
+
+</html>

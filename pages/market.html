@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Маркет</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="../css/style.min.css?_v=20230709191922">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=e2266caa-4367-4e73-8883-187ee8c63617&lang=ru_RU&_v=20230709191922" type="text/javascript"></script>
+
+
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="head__container">
+				<a class="translate" href="../eng/market-eng.html"><img src="../img/translate.svg" alt=""></a>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+
+			<div class="header-open">
+
+
+				<div class="header__container">
+
+					<div class="header__menu menu">
+
+						<nav class="menu__body">
+							<h2 class="menu__title">Мы всегда в решении ожидания</h2>
+							<ul class="menu__list">
+								<li class="menu__item"><a href="#" class="menu__link _icon-arrow soon">Центр помощи</a></li>
+
+								<li class="menu__item"><a href="https://t.me/b1ockwallet" class="menu__link _icon-arrow">Telegram</a></li>
+								<li class="menu__item"><a href="https://github.com/b1ockwallet" class="menu__link _icon-arrow">GitHub</a></li>
+							</ul>
+						</nav>
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<a href="../index.html" class="_icon-arrow3"></a>
+
+				<div class="page__container-small">
+					<a href="../index.html" class="buy-card__logo">
+						<img src="../img/logo-blue.svg" alt="logo">
+					</a>
+					<div class="market">
+						<div class="market__body body-market">
+							<div class="body-market__cards cards-body-market">
+								<div class="cards-body-market__item item-market-cards">
+									<div class="item-market-cards__image _icon-nfc">
+										<picture><source srcset="../img/Card00.webp" type="image/webp"><img src="../img/Card00.png" alt=""></picture>
+									</div>
+									<div class="item-market-cards__info item-market-cards-info">
+										<div class="item-market-cards-info__quantity">Количество: <span>Бесконечно</span></div>
+										<div class="item-market-cards-info__body">
+											<div class="item-market-cards-info__complect">Набор из <span>2-х карт</span></div>
+											<div class="quantity">
+
+												<button onclick="decreaseQuantity()" class="quantity__button quantity__button_minus" id="minus">-</button>
+												<div class="quantity__count" id="quantity">1</div>
+												<button onclick="increaseQuantity()" id="plus" class="quantity__button_plus quantity__button">+</button>
+
+												<div>
+
+
+												</div>
+
+
+											</div>
+
+										</div>
+									</div>
+									<div class="set-card-item-block__price price-item-block">
+										<div class="price-item-block__body">
+											<div class="price-item-block__title">Итог:</div>
+											<div class="price-item-block__sum"> <span id="price">1500</span> руб.
+											</div>
+										</div>
+										<button onclick="redirectToOrder()" class="set-card-item-block__button button-buy">Купить карту</button>
+
+									</div>
+
+
+
+									<div class="item-market-cards__free free-item-market-cards">
+										<div class="free-item-market-cards__item item-free-market">
+											<div class="item-free-market__title _icon-userleft">Бесплатная доставка</div>
+										</div>
+										<div class="free-item-market-cards__item item-free-market">
+											<div class="item-free-market__title _icon-cardrefresh1">Бесплатное обслуживание</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="cards-body-market__item cards-body-market__item-2 item-market-cards">
+									<div class="item-market-cards__image-2 _icon-nfc">
+										<picture><source srcset="../img/Cardironfish.webp" type="image/webp"><img src="../img/Cardironfish.png" alt=""></picture>
+									</div>
+									<div class="item-market-cards__info item-market-cards-info item-market-cards-info-3">
+
+										<div class="item-market-cards-info__quantity">Количество: <span>50/100</span></div>
+										<div class="item-market-cards-info__body">
+											<div class="item-market-cards-info__complect">Набор из <span>2-х карт</span></div>
+											<div class="quantity">
+
+												<button onclick="decreaseQuantity2()" class="quantity__button quantity__button_minus" id="minus">-</button>
+												<div class="quantity__count" id="quantity2">1</div>
+												<button onclick="increaseQuantity2()" id="plus" class="quantity__button_plus quantity__button">+</button>
+
+												<div>
+
+
+												</div>
+
+
+											</div>
+
+										</div>
+
+										<div class="set-card-item-block__price price-item-block">
+											<div class="price-item-block__body">
+												<div class="price-item-block__title">Итог:</div>
+												<div class="price-item-block__sum"> <span id="price2">1500</span> руб.
+												</div>
+											</div>
+											<button onclick="redirectToOrder2()" class="set-card-item-block__button button-buy">Купить карту</button>
+
+										</div>
+
+									</div>
+									<div class="item-market-cards__free free-item-market-cards free-item-market-cards-3">
+										<div class="free-item-market-cards__item item-free-market">
+											<div class="item-free-market__title _icon-userleft">Бесплатная доставка</div>
+										</div>
+										<div class="free-item-market-cards__item item-free-market">
+											<div class="item-free-market__title _icon-cardrefresh1">Бесплатное обсл-вание</div>
+										</div>
+										<div class="free-item-market-cards__item item-free-market">
+											<div class="item-free-market__title _icon-flashdrive">Работает с Block Classic</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</section>
+
+
+			</div>
+
+
+
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__logo">
+						<img src="../img/logo.svg" alt="">
+					</div>
+					<div class="footer__menu menu">
+
+						<nav class="footer-menu__body">
+
+							<div class="footer-menu__title">Товары</div>
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link soon">Block NFC</a></li>
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link soon">Учиться</a></li>
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link soon">Часто задаваемые вопросы</a></li>
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link soon">B1ock Академия</a></li>
+							</ul>
+						</nav>
+						<nav class="footer-menu__body">
+
+							<div class="footer-menu__title">Приложение</div>
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item"><a href="../app/app-debug.apk" download class="footer-menu__link">Мобильное приложение</a></li>
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link soon">Настольные приложения</a></li>
+							</ul>
+						</nav>
+						<nav class="footer-menu__devs">
+
+							<div class="footer-menu__title">Devs</div>
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link soon">Портал разработчиков</a></li>
+							</ul>
+							<div class="footer-menu__title title-resource">Ресурсы</div>
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link soon">Swagger API</a></li>
+								<li class="footer-menu__item"><a href="https://t.me/b1ockwallet" class="footer-menu__link">Telegram</a></li>
+								<li class="footer-menu__item"><a href="https://github.com/b1ockwallet" class="footer-menu__link">GitHub</a></li>
+							</ul>
+						</nav>
+
+					</div>
+
+				</div>
+				<div class="footer__copyright">с 2022 по настоящее время / B1OCK. Все права защищены.</div>
+			</div>
+		</footer>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<script src="../js/app.min.js?_v=20230709191922"></script>
+	<script>
+		var quantity = 1;
+		var price = 1500;
+		var price2 = 1500;
+		var quantity2 = 1;
+
+		function decreaseQuantity() {
+			if (quantity > 1) {
+				quantity--;
+			}
+			updateQuantityAndPrice();
+		}
+
+		function increaseQuantity() {
+			quantity++;
+			updateQuantityAndPrice();
+		}
+
+		function updateQuantityAndPrice() {
+			document.getElementById("quantity").innerText = quantity;
+			document.getElementById("price").innerText = quantity * price;
+		}
+
+		function redirectToOrder() {
+			window.location.href = "formbuycard-wallet.html?quantity=" + quantity + "&price=" + (quantity * price);
+		}
+		// =================
+		function decreaseQuantity2() {
+			if (quantity2 > 1) {
+				quantity2--;
+			}
+			updateQuantityAndPrice2();
+		}
+
+		function increaseQuantity2() {
+			quantity2++;
+			updateQuantityAndPrice2();
+		}
+
+		function updateQuantityAndPrice2() {
+			document.getElementById("quantity2").innerText = quantity2;
+			document.getElementById("price2").innerText = quantity2 * price2;
+		}
+
+		function redirectToOrder2() {
+			window.location.href = "formbuycard-ironfish.html?quantity2=" + quantity2 + "&price2=" + (quantity2 * price2);
+		}
+	</script>
+
+</body>
+
+</html>
