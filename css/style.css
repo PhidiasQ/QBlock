@@ -3473,11 +3473,12 @@ input::placeholder {
 }
 
 .buy-form-card__total {
-  align-items: center;
+ 
   margin-bottom: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+   align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
